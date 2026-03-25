@@ -22,12 +22,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\c-lib\build\library\$(NativePlatformDir)\$(Configuration)\gs1encoders.dll"
-          CopyToOutputDirectory="PreserveNewest"
-          Link="gs1encoders.dll" />
-    <Content Include="..\c-lib\gs1-syntax-dictionary.txt"
-             CopyToOutputDirectory="PreserveNewest"
-             Link="gs1-syntax-dictionary.txt" />
+    <None Remove="..\c-lib\build\library\x64\Release\gs1encoders.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\c-lib\build\library\x64\Release\gs1encoders.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\c-lib\build\library\$(NativePlatformDir)\$(Configuration)\gs1encoders.dll" CopyToOutputDirectory="PreserveNewest" Link="gs1encoders.dll" />
+    <Content Include="..\c-lib\gs1-syntax-dictionary.txt" CopyToOutputDirectory="PreserveNewest" Link="gs1-syntax-dictionary.txt" />
   </ItemGroup>
 
 </Project>
