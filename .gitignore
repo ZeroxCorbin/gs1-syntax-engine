@@ -41,3 +41,4 @@ src/js-wasm/example-web-service-user-dotnet-app/obj/
 /src/dotnet-lib/artifacts/review
 /src/dotnet-test/obj/Release/net8.0
 /src/dotnet-test
+/src/dotnet-lib/._buildcheck/obj
